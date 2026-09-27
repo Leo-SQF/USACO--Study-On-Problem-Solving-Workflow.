@@ -2,8 +2,8 @@
 
 <!-- The overall schedule. Fill in exact dates for your season. Update weekly. -->
 
-**Season / target contest:** `e.g. USACO Dec 2026`
-**Project window:** `YYYY-MM-DD` to `YYYY-MM-DD` (4 months)
+**Season / target contest:** `USACO Dec 2026`
+**Project window:** `2026-10-1` to `2026-12- -` (4 months)
 
 ---
 
