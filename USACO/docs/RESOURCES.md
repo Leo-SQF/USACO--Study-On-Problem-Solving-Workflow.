@@ -20,13 +20,6 @@ good ones. Keep each entry short. -->
 - [AtCoder](https://atcoder.jp) — extra practice problems
 - (add more)
 
-## Tools / Setup
-
-- Language + version: `C++17 / Java / Python`
-- Local judge / test harness: `...`
-- Editor / IDE: `...`
-- (add more)
-
 ## People / Blogs I follow
 
 - `name — url — why`
