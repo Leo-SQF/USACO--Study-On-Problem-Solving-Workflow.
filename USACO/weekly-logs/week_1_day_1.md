@@ -8,7 +8,7 @@ What is the goal of today’s experiment?
  *Test 1 Bronze problem using the 5-step modeling process.*
 
 Pre-set hypothesis:
-__none yet______________________________________
+*none yet*
 
 Selected problems for today:
 1. USACO 2020 January Contest, Bronze
@@ -16,6 +16,7 @@ Problem 1. Word Processor
 
 ## 2. Experiment Records
 | Problem Link | Modeling Time | Coding Time | Debug Time | Result (AC/WA/TLE) | Bug Type (A/B/C/D) |
+
 | https://usaco.org/index.php?page=viewproblem2&cpid=987 | ---- | ---- | ---- | ---- | ---- |
 |  |  |  |  |  |  |
 
