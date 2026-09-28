@@ -6,12 +6,11 @@ Fill every section BEFORE coding (model first!), and reflect AFTER. -->
 
 ## Problem Info
 
-- **Name:** `
-USACO 2020 January Contest, Bronze
-Problem 1. Word Processor`
-- **Source:** `e.g. USACO Dec 2024 Silver P1`
-- **Difficulty (self-rated):** `1–10`
-- **Date attempted:** `YYYY-MM-DD`
+- **Name:** ` Word Processor`
+- **Source:** `USACO 2020 January Contest, Bronze
+Problem 1.`
+- **Difficulty (self-rated):** `1`
+- **Date attempted:** `2026-9-28`
 - **Status:** `Not started / In progress / Solved / Stuck / Solved with help`
 - **Time spent:** `XX min`
 
