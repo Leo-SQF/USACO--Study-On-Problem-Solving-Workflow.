@@ -17,28 +17,28 @@ Problem 1. Word Processor
 ## 2. Experiment Records
 | Problem Link | Modeling Time | Coding Time | Debug Time | Result (AC/WA/TLE) | Bug Type (A/B/C/D) |
 
-| https://usaco.org/index.php?page=viewproblem2&cpid=987 | ---- | ---- | ---- | ---- | ---- |
+| https://usaco.org/index.php?page=viewproblem2&cpid=987 | ~20min | ~5-6min | AC | A | ---- |
 |  |  |  |  |  |  |
 
 ## 3. Review after solving all problems
 Compare predicted edge cases and real bugs:
-________________________________________
+  same: the lack of experience in coding.
 
 Did the 5-step modeling process help catch errors in advance?
-________________________________________
+  yes, but not so obviesly: it helped to shorten test time.
 
-Suggestions to improve the modeling workflow (save for weekly review, DO NOT modify Methodology.md today):
-________________________________________
+Suggestions to improve the modeling workflow (save for weekly review):
+  none.
 
 ## 4. Quick Reflection
 Which step of the 5-step process worked poorly today?
-________________________________________
+  I have trouble following and adding to all these files because its the first day.
 
 ## 5. Git & File Update Check
-- [ ] New problem markdown added to /problems
-- [ ] Source code added to /solutions
-- [ ] This daily log saved
-- [ ] Git commit completed
+- [√] New problem markdown added to /problems
+- [√] Source code added to /solutions
+- [√] This daily log saved
+- [√] Git commit completed
 
 ## 6. Tomorrow's Simple Plan
-________________________________________
+one more problem.
