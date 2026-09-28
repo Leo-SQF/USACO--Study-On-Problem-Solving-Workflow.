@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    // For file input/output (USACO standard)
+    // For file input/output 
     freopen("word.in", "r", stdin);
     freopen("word.out", "w", stdout);
 
@@ -13,7 +13,7 @@ int main()
     cin >> N >> K;
 
     vector<string> currentLine;
-    int currentTotal = 0; // sum of lengths of words on current line (no spaces)
+    int currentTotal = 0; // sum of lengths of words on current line 
 
     for (int i = 0; i < N; i++)
     {
