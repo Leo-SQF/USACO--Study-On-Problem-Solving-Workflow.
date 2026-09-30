@@ -24,27 +24,35 @@ Problem 1`
 
 | Item | Value |
 |------|-------|
-| Input | |
-| Output | |
-| Constraint on N | |
-| Edge cases | |
+| Input |1/2 |
+| Output | 1|
+| Constraint on N |none, just that it must be positive|
+| Edge cases | one|
 
 ---
 
 ## Step 2 — Model
 
-<!-- What kind of problem is this? Which model type? -->
+<Bessie the cow is working on an essay for her writing class. Since her handwriting is quite bad, she decides to type the essay using a word processor.
+The essay contains N
+ words (1≤N≤100
+), separated by spaces. Each word is between 1 and 15 characters long, inclusive, and consists only of uppercase or lowercase letters. According to the instructions for the assignment, the essay has to be formatted in a very specific way: each line should contain no more than K
+ (1≤K≤80
+) characters, not counting spaces. Fortunately, Bessie's word processor can handle this requirement, using the following strategy:
 
-- Model type: `greedy / graph / DP / binary search / ...`
-- Explanation:
+If Bessie types a word, and that word can fit on the current line, put it on that line.
+Otherwise, put the word on the next line and continue adding to that line.
+Of course, consecutive words on the same line should still be separated by a single space. There should be no space at the end of any line.
+- Model type: `calculation`
+- Explanation: requires calculation
 
 ---
 
 ## Step 3 — Algorithm
 
-- Algorithm chosen: `...`
-- Time complexity: `O(?)`
-- Space complexity: `O(?)`
+- Algorithm chosen: `minus`
+- Time complexity: `O`
+- Space complexity: `O`
 - Why it fits the constraints:
 
 ---
@@ -58,10 +66,10 @@ Problem 1`
 
 ## Step 5 — Verification
 
-- [ ] Passes provided samples
-- [ ] Passes my edge cases
-- [ ] Within time limit
-- [ ] Brute-force cross-check (if applicable)
+- [yes] Passes provided samples
+- [yes] Passes my edge cases
+- [yes] Within time limit
+- [yes] Brute-force cross-check (if applicable)
 
 ---
 
