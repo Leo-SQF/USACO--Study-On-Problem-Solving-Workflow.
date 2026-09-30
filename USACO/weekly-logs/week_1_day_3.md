@@ -21,23 +21,23 @@ Problem 1
 
 ## 3. Review after solving all problems
 Compare predicted edge cases and real bugs:
-________________________________________
+__I had perdicted that o would make a mistake in one of the words, but it tures out that i misunderstood part of the question, which is due to me not paying it the full attention______________________________________
 
 Did the 5-step modeling process help catch errors in advance?
-________________________________________
+__not in this case, because this is a sinple problem that does not actually require that much thinking______________________________________
 
 Suggestions to improve the modeling workflow (save for weekly review, DO NOT modify Methodology.md today):
-________________________________________
+___Read though carefully_____________________________________
 
 ## 4. Quick Reflection
 Which step of the 5-step process worked poorly today?
-________________________________________
+___the analyzing part, where i did not understand properly._____________________________________
 
 ## 5. Git & File Update Check
-- [ ] New problem markdown added to /problems
-- [ ] Source code added to /solutions
-- [ ] This daily log saved
-- [ ] Git commit completed
+- [yes] New problem markdown added to /problems
+- [tes] Source code added to /solutions
+- [yes] This daily log saved
+- [yes] Git commit completed
 
 ## 6. Tomorrow's Simple Plan
 ________________________________________
