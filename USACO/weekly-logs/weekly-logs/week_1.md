@@ -7,26 +7,26 @@ Copy the whole file, fill it in, and commit at end of the week. -->
 ## Week of `2026-10-6` (Week 1 / 16)
 
 ### Goals for this week
-- [ ] bulid actual coding abilities before going deeper.
+- [count is compleated] bulid actual coding abilities before going deeper.
 
 ### Problems attempted
 | Problem | Source | Status | Time | Model type | Notes |
-|---------|--------|--------|------|------------|-------|
+|all listed in the problems file|the USACO website and AI|from 15 to 25 min|basic calculations, vectors and more simple problems|none|
 
 
 ### Workflow check
-- Which step took the longest? `...`
-- Did I skip any step? `...`
-- Rating of workflow this week (1–10): `...`
+- Which step took the longest? `the writing of code, because of a lack of flunacy`
+- Did I skip any step? `skipped the entire reading step and modling step because simple problems such as these basiclly do not require such complications`
+- Rating of workflow this week (1–10): `2`
 
 ### Algorithm / pattern learned this week
-- `...`
+- `most importantly structure and vector and reading/writing in to .txt files `
 
 ### Problems / blockers
-- `...`
+- `in efficiency in coding resulting in a lack of practice`
 
 ### Next week's plan
-- `...`
+- `more practice yet moving on to deeper problems`
 
 ---
 
