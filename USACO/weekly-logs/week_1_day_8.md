@@ -17,7 +17,7 @@ Selected problems for today:
 
 ## 2. Experiment Records
 | Problem Link | Modeling Time | Coding Time | Debug Time | Result (AC/WA/TLE) | Bug Type (A/B/C/D) |
-| ---- | ---- | ---- | ---- | ---- | ---- |
+| none | 5min | 10 min| bie less | AC | None |
 
 ## 3. Review after solving all problems
 Compare predicted edge cases and real bugs:
