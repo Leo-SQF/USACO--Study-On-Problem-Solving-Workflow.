@@ -7,7 +7,7 @@ Copy the whole file, fill it in, and commit at end of the week. -->
 ## Week of `2026-10-6` (Week 1 / 16)
 
 ### Goals for this week
-- [count is compleated] bulid actual coding abilities before going deeper.
+- [count is compleated] bulid actual coding abilities before going deeper while refining step 4 of th five step process, 
 
 ### Problems attempted
 | Problem | Source | Status | Time | Model type | Notes |
