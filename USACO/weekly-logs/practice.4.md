@@ -1,3 +1,47 @@
+# Daily Experiment Log
+Week: 1 | Day: 6
+Date: 2026-10-4
+Active modeling version: v0.0
+
+## 1. Today's Experiment Objective
+What is the goal of today’s experiment?
+to practice skills regarding Manhattan distance, vectors, calculation, and freopen
+
+Pre-set hypothesis:
+none
+
+Selected problems for today:
+1. practice.4
+
+
+## 2. Experiment Records
+| Problem Link | Modeling Time | Coding Time | Debug Time | Result (AC/WA/TLE) | Bug Type (A/B/C/D) |
+
+| ---- | 8min | 15min | 8min | AC | ---- |
+
+
+## 3. Review after solving all problems
+Compare predicted edge cases and real bugs:
+____had not predicted edge cases.____________________________________
+
+Did the 5-step modeling process help catch errors in advance?
+____No, because the peoblem is not with understanding the problem____________________________________
+
+Suggestions to improve the modeling workflow (save for weekly review, DO NOT modify Methodology.md today):
+_____None, the whole thing does not work yet.___________________________________
+
+## 4. Quick Reflection
+Which step of the 5-step process worked poorly today?
+____None, because it has not been effectively put tu use.____________________________________
+
+## 5. Git & File Update Check
+- [ ] New problem markdown added to /problems
+- [ ] Source code added to /solutions
+- [ ] This daily log saved
+- [ ] Git commit completed
+
+## problem and solution is below
+
 /*problem: There are N cows on the farm. Each cow has coordinates (x,y) and a happiness value h.
 
 The farmer wants to pick exactly 2 cows for a small party.
@@ -95,7 +139,7 @@ int main()
 } 
 /*
 notes:
-today was not logged in in the usual manner. This problem was AI generated, but it was I who sloved it. 
+today was not logged in in the usual manner. This problem was AI generated, but I sloved it. 
 I think that this problem is no simpler than any bronze problem.
 Infact I found that doing this problem proved more halpful than the first five days of coding
 perhaps because I specificlly asked AI to generate a problem that"encompassed all Bronze skills"
