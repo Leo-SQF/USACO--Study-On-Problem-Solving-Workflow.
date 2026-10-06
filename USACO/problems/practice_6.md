@@ -79,10 +79,10 @@ One line with K integers: the IDs of the selected cows, printed in ascending ord
 
 ## Step 5 — Verification
 
-- [ ] Passes provided samples
-- [ ] Passes my edge cases
-- [ ] Within time limit
-- [ ] Brute-force cross-check (if applicable)
+- [1 ] Passes provided samples
+- [ 0] Passes my edge cases
+- [1 ] Within time limit
+- [1 ] Brute-force cross-check (if applicable)
 
 ---
 
