@@ -16,14 +16,13 @@ Copy the whole file, fill it in, and commit at end of the week. -->
 
 ### Workflow check
 - Which step took the longest? `the writing of code, because of a lack of flunacy`
-- Did I skip any step? `skipped the entire reading step and modling step because simple problems such as these basiclly do not require such complications`
 - Rating of workflow this week (1–10): `2`
 
 ### Algorithm / pattern learned this week
 - `most importantly structure and vector and reading/writing in to .txt files `
 
 ### Problems / blockers
-- `in efficiency in coding resulting in a lack of practice`
+- `in efficiency in coding resulting in a lack of practice, and errors due to typos and the format uesd to call on dofferent tools.`
 
 ### Next week's plan
 - `more practice yet moving on to deeper problems`
