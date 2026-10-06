@@ -7,7 +7,7 @@ Copy the whole file, fill it in, and commit at end of the week. -->
 ## Week of `2026-10-6` (Week 1 / 16)
 
 ### Goals for this week
-- [count is compleated] bulid actual coding abilities before going deeper while refining step 4 of th five step process, Establish baseline data, validate raw v0.0 5-step modeling workflow on Bronze problems.
+- [count is compleated] Establish the tepo and femilirized myself with it, did 7 problems with this and understanks how the thing works. Am ready to perceide with further studies .bulid actual coding abilities before going deeper while refining step 4 of th five step process, Establish baseline data, validate raw v0.0 5-step modeling workflow on Bronze problems.
 
 ### Problems attempted
 | Problem | Source | Status | Time | Model type | Notes |
