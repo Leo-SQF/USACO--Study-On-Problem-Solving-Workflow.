@@ -5,10 +5,10 @@ Active modeling version: v0.0
 
 ## 1. Today's Experiment Objective
 What is the goal of today’s experiment?
-Example: Test 2 Bronze greedy problems using the 5-step modeling process.
+To try and implement the first two steps of the five step process by doing a bronze problem.
 
 Pre-set hypothesis:
-none
+that maybe the first two steps will lead to unexpected insight in to how the problem may be solved faster.
 
 Selected problems for today:
 1. practice.5
@@ -24,10 +24,10 @@ Compare predicted edge cases and real bugs:
 __had not perdicted______________________________________
 
 Did the 5-step modeling process help catch errors in advance?
-___no , same as last time_____________________________________
+___It did not, although it did help me find a better approuch._____________________________________
 
 Suggestions to improve the modeling workflow (save for weekly review, DO NOT modify Methodology.md today):
-___none_____________________________________
+___none yet._____________________________________
 
 ## 4. Quick Reflection
 Which step of the 5-step process worked poorly today?
