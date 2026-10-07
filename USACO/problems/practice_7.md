@@ -1,8 +1,10 @@
 # Problem Template
 
-## Problem Info
+<!-- One copy of this file per problem. Save as:
+problems/<topic>/<problem-name>.md
+Fill every section BEFORE coding (model first!), and reflect AFTER. -->## Problem Info
 
-- **Name:** `Cow Group Selection`
+- **Name:** `Cow Watering`
 - **Source:** `Self-made USACO Bronze practice`
 - **Difficulty (self-rated):** `4`
 - **Date attempted:** `2026-10-07`
@@ -14,40 +16,38 @@
 ## Step 1 — Read & Restate
 
 > 
-> We have N cows. Each cow has a weight w and an ID number. We need to pick a group of cows. Every pair of cows in this group must have a GCD of their weights greater than 1. Find the maximum possible size of this group.
-> 
-> 
+> Farmer John has N water taps in a line. Each tap has a flow value. We will receive Q queries. Each query asks for the sum of tap flows from position L to position R inclusive. Compute and print the sum for each query.
 > | Item | Value |
-> | --- | --- |
-> | Input | First line: integer N. Next N lines each have two integers w, id (weight and cow id). |
-> | Output | Print the maximum number of cows we can select satisfying the rule. |
-> | Constraint on N | $1 \le N \le 1000$ |
-> | Edge cases | N=1 (only one cow, answer=1); all weights are primes with no common factors; multiple cows share same weight. |
+> |------|-------|
+> | Input | First line: two integers N and Q.Second line: N integers, the flow of each tap.Next Q lines: each line two integers L, R. |
+> | Output | For every query, output the sum of values from index L to R. |
+> | Constraint on N | \(1 \le N \le 1000,\ 1\le Q \le 1000\) |
+> | Edge cases | L=R (sum is just the single element); L=1, R=N (sum all elements); N=1, multiple queries. |
 
 ---
 
 ## Step 2 — Model
 
-- Model type: `Brute Force / Enumeration`
+- Model type: `Prefix Sum`
 - Explanation:
-We test all possible groups of cows, check the GCD condition for every pair inside a group, keep track of the largest valid group size. Since N=1000 we will use a smarter enumeration strategy: group cows by prime divisors. We count how many numbers are divisible by each prime; the maximum count is our answer.
+We precompute a prefix sum array once. Then each range sum query can be answered in O(1) using the formula \(s[R]-s[L-1]\). This is perfect for multiple range sum queries.
 
 ---
 
 ## Step 3 — Algorithm
 
-- Algorithm chosen: `Brute force enumeration + GCD`
-- Time complexity: $O(N^2)$
-- Space complexity: $(O(N))$
+- Algorithm chosen: `Prefix Sum`
+- Time complexity: \(O(N+Q)\)
+- Space complexity: \(O(N)\)
 - Why it fits the constraints:
-N ≤ 1000, $N^2=1,000,000$ operations, which is well within time limits for USACO Bronze.
+N and Q are up to 1000. Preprocessing takes 1000 steps, each query is constant time. Far under time limits for Bronze.
 
 ---
 
 ## Step 4 — Implementation Notes
 
-- Data structures used: `struct Cow array`
-- Pitfalls / bugs I hit: `Forget that N=1 gives answer 1; integer overflow when calculating GCD; mixing up 1 as a special case (gcd(1, x)=1)`
+- Data structures used: `int array a, long long prefix sum array s`
+- Pitfalls / bugs I hit: `Off-by-one index error; forget s[0]=0; use int for sum and hit integer overflow`
 
 ---
 
@@ -66,5 +66,4 @@ N ≤ 1000, $N^2=1,000,000$ operations, which is well within time limits for USA
 - Did I follow the workflow, or skip a step? `...`
 - If stuck: where did I get stuck and what unblocked me? `...`
 - One thing to improve next time: `...`
-
----
+- 
