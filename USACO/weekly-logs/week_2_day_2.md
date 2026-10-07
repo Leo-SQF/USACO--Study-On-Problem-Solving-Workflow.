@@ -4,7 +4,7 @@ Date: 2026-10-07
 Active modeling version: v0.0
 ## 1. Today's Experiment Objective
 What is the goal of today’s experiment?
-Example: Test 2 Bronze greedy problems using the 5-step modeling process.
+to test the first two steps of the process by doing a bronze problem
 Pre-set hypothesis:
 Using the 5-step problem template before writing C++ code can reduce compile errors and logical bugs, especially for struct and array index mistakes.
 ________________________________________
@@ -34,7 +34,8 @@ Add a dedicated field in the problem template: "Data Structure Declaration" to w
 ________________________________________
 ## 4. Quick Reflection
 Which step of the 5-step process worked poorly today?
-Step4 Implementation Notes: I skipped drafting data structure definitions before writing input code.
+Step4 Implementation Notes: drafting data structure definitions before writing input code was not perfectly excuted.
+Althougth doing step one and two led me to relize that on this case, just plain calculations can finish the job quickly.
 ________________________________________
 ## 5. Git & File Update Check
 - [x] New problem markdown added to /problems
@@ -44,4 +45,4 @@ ________________________________________
 ## 6. Tomorrow's Simple Plan
 Finish a second USACO bronze problem (greedy + struct + sort), fully complete the 5-step template before writing any code, record modeling/coding/debug time.
 
-如果你想，我可以把Bug Type的定义固定写在日志模板顶部，或者直接帮你把明天那道青铜题的md problem模板提前填好。
+
