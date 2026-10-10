@@ -39,4 +39,4 @@ All steps worked smoothly; no weak step today. The model mapping from subsequenc
 - [x] Git commit completed
 
 ## 6. Tomorrow's Simple Plan
-Continue practicing silver-level linear counting / DP subsequence problems, consolidate 5-step modeling process, focus on accumulating anti-overflow coding habits.
+Continue practicing bronze-level linear counting / DP subsequence problems, consolidate 5-step modeling process, focus on accumulating anti-overflow coding habits.
