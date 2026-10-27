@@ -1,54 +1,82 @@
-# Problem Info
-- Name: Social Distancing (Posts)
-- Source: USACO 2020 February Bronze P1
-- Difficulty (self‑rated): 5 (1–10)
-- Date attempted: 2026-10-27 (YYYY‑MM‑DD)
-- Status: Solved (Not started / In progress / Solved / Stuck / Solved with help)
-- Time spent: 47 min
+# Daily Experiment Log
+Week 4 / Day 5
+Date: ____ (YYYY‑MM‑DD)
+Active modeling version: v0.0
+Today's Experiment Objective: Week4 mixed Bronze review; brute‑force geometry enumeration. Practice reading geometric problem constraints, recognizing when triple‑loop brute force is acceptable. Continue collecting baseline experiment data for month‑1 summary.
+Pre‑set hypothesis: Since N is small, triple loop O(N³) brute‑force enumeration over all candidate corner points will work. We do not need complex computational geometry. The fourth rectangle corner does not have to be present in input posts.
+Selected problems for today:
+- USACO 2020 February Bronze P1 — Social Distancing (Posts)
 
-## Step 1 — Read & Restate
-Given N fence post points on 2‑D plane. We need to find the largest possible axis‑aligned rectangle such that one corner of the rectangle is exactly one of the given posts.
-One side of rectangle shares the same y‑coordinate with another post, another side shares same x‑coordinate with a third post. Compute maximum area among all such rectangles.
+| Problem Link | Modeling Time | Coding Time | Debug Time | Result | Bug Type |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Social Distancing 2020 Feb Bronze P1 | ____ min | ____ min | ____ min | ____ | ____ |
 
-| Item | Value |
-|------|-------|
-| Input | N, followed by N pairs (a,b) representing post coordinates |
-| Output | Maximum rectangle area found |
-| Constraints | Small N (Bronze, triple loop feasible) |
-| Edge cases | Only few points; dx or dy equal zero (area zero); multiple posts share same x or same y coordinate |
+---
+## Step 1 Problem Abstraction
+We are given N fence posts as (x,y) coordinates on a 2D plane.
+We choose one post i as one corner of axis‑aligned rectangle.
+We find another post j sharing same y‑coordinate to get horizontal width dx.
+We find another post k sharing same x‑coordinate to get vertical height dy.
+Area = dx * dy.
+Goal: find maximum possible area from all such candidate rectangles.
+Important: The fourth corner point is virtual; it does not need to be one of input posts.
 
-## Step 2 — Model
-- Model type: Brute‑force enumeration of candidate rectangle corners
-- Explanation:
-Pick base point `i (xi, yi)` as rectangle corner.
-1. Find point `j` that shares same y = yi, compute horizontal distance `dx = abs(xj − xi)`.
-2. Find point `k` that shares same x = xi, compute vertical distance `dy = abs(yk − yi)`.
-3. The candidate rectangle area = dx * dy.
-We scan all i,j,k triples and keep track of maximum area.
-> Note: The fourth corner point does not need to exist in input posts.
+## Step 2 Algorithm Selection
+Candidate1: Try pre‑group points by x‑key and y‑key, then compute combinations.
+→ Rejected: For small N, pre‑group adds extra thinking overhead; brute‑force triple loop is simpler.
 
-## Step 3 — Algorithm
-- Algorithm chosen: Triple nested brute‑force loops
-- Time complexity: O(N³)
-- Space complexity: O(N), store points in vector of vector<int>
-- Why it fits: N is small for Bronze; triple loop runs quickly; no complex geometry algorithm needed.
+Candidate2: Triple loop brute‑force: iterate base point i, find j with same y, find k with same x, compute area and track maximum.
+Selected algorithm: triple nested brute‑force loops.
+Reason: N is small; logic is direct, reduces modeling misinterpretation risk.
+Complexity: O(N³).
 
-## Step 4 — Implementation Notes
-- Data structures used: `vector<vector<int>> post` to store each (x,y) coordinate pair
-- Pitfalls / bugs I hit: ____
-  1. dx or dy can be zero → area becomes zero, will not affect max_ans.
-  2. j and k can be same index as base point i; code still safe because dx/dy becomes zero.
-  3. We do NOT require the fourth corner to exist in input points. This is easy to misinterpret.
-  4. Initialize `max_ans = 0`.
+## Step3 Logic & Data Structure Framework
+Data structure:
+`vector<vector<int>> post` stores each post coordinate pair (x,y).
 
-## Step 5 — Verification
-- [x] Pass official sample input
-- [x] Test case: points with same x or same y
-- [x] Test minimal N=3 case
-- [x] Test case where dx=0 or dy=0 (area zero)
+Pseudocode:
+Initialize max_ans = 0
+Loop i over all posts:
+    xi = post[i][0], yi = post[i][1]
+    Loop j over all posts:
+        if post[j][1] == yi:
+            dx = abs(post[j][0] - xi)
+            Loop k over all posts:
+                if post[k][0] == xi:
+                    dy = abs(post[k][1] - yi)
+                    area2 = dx * dy
+                    if area2 > max_ans:
+                        max_ans = area2
+Output max_ans
 
-## Reflection (fill AFTER solving)
-- What was the hardest part? ____
-- Did I follow the workflow, or skip a step? ____
-- If stuck: where did I get stuck and what unblocked me? ____
-- One thing to improve next time: ____
+## Step4 Boundary & Fault Tolerance Modeling
+Pre‑predicted edge cases:
+1. dx = 0 or dy = 0 → area zero; will not overwrite valid larger max_ans.
+2. j or k can be identical to base point i. Code still safe.
+3. Misconception trap: mistakenly require fourth corner point to exist inside input list.
+4. Multiple points share same x or same y coordinate.
+5. All points are on one horizontal or vertical line → max area = 0.
+
+## Step5 Verification & Reflection Modeling
+Test official sample and minimal edge cases.
+Classify bug type: ____ (A/B/C/D) — fill after real testing.
+Evaluate 5‑step workflow: Step1 abstraction is critical, especially understanding the fourth corner does not need to exist. Step2 correctly choose brute‑force instead of over‑engineering.
+Did the process catch errors early? ____
+
+---
+## Review after solving all problems
+Compare predicted edge cases and real bugs: ____
+Did the 5‑step modeling process help catch errors in advance? ____
+Suggestions to improve the modeling workflow (save for weekly review, DO NOT modify Methodology.md today): ____
+
+## Quick Reflection
+Which step was hardest today: ____
+
+## Tomorrow's Simple Plan
+Finish remaining Week‑4 mixed Bronze practice. Collect all Week1‑Week4 experimental data for month‑one baseline summary. Prepare to summarize bug statistics and plan v1.0 methodology revisions.
+
+✅ Checklist
+- [x] New problem markdown added to /problems
+- [x] Source code added to /solutions
+- [x] This daily log saved
+- [x] Git commit completed
